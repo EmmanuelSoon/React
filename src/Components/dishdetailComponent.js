@@ -41,8 +41,9 @@ import { Card, CardImg, CardImgOverlay, CardText, CardBody,
                     <p>-- {comment.author},
                     &nbsp;
                     {new Intl.DateTimeFormat('en-GB', {
-                        dateStyle: "long"
-
+                         year: 'numeric', 
+                         month: 'short', 
+                         day: '2-digit'
                     }).format(new Date(comment.date))}
                     </p>
                 </li>
