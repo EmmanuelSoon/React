@@ -34,7 +34,7 @@ import { Card, CardImg, CardImgOverlay, CardText, CardBody,
                     <p>{comment.comment}</p>
                     <p>-- {comment.author},
                     &nbsp;
-                    {new Intl.DateTimeFormat('en-GB', {
+                    {new Intl.DateTimeFormat('en-US', {
                          year: 'numeric', 
                          month: 'short', 
                          day: '2-digit'
@@ -63,6 +63,7 @@ import { Card, CardImg, CardImgOverlay, CardText, CardBody,
 
     const DishDetail = (props) => {
             
+
             if(props.dish == null){
                 return <div></div>
             }
