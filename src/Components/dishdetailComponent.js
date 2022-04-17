@@ -4,12 +4,7 @@ import { Card, CardImg, CardImgOverlay, CardText, CardBody,
 
 
   class Dishdetail extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            selectedDishdetails:this.props.dishdetail
-        };
-    }
+
 
 
     renderDish(dish) {

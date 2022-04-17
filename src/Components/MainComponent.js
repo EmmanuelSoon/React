@@ -9,7 +9,7 @@ class Main extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {
+    this.state = { //local state definition
       dishes: DISHES,
       selectedDish: null,
     };
@@ -19,7 +19,7 @@ class Main extends Component {
     this.setState({ selectedDish: dishId});
     }
 
-  render() {
+  render() { //render() is used to define the view 
     return (
       <div>
         <Navbar dark color ="primary"> 
@@ -30,7 +30,7 @@ class Main extends Component {
         <Menu dishes={this.state.dishes} 
             onClick= {(dishId) => this.onDishSelect(dishId)} />
         <Dishdetail 
-            dish={this.state.dishes.filter((dish) => dish.id === this.state.selectedDish )} />
+            dish={this.state.dishes.filter((dish) => dish.id === this.state.selectedDish )[0]} />
       </div>
 
     )
