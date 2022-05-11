@@ -28,7 +28,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EmmanuelSoon/Git-test.git"
+    "url": "git+https://github.com/EmmanuelSoon/React.git"
   },
   "browserslist": {
     "production": [
