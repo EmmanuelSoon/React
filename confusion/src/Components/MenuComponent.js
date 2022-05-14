@@ -26,7 +26,7 @@ import {Link} from 'react-router-dom';
       );
   });
 
-    return (//render the dishdetais using the <Dishdetails> 
+    return (
         <div className="container">
           <div className='row'>
             <Breadcrumb>
